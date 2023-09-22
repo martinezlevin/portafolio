@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     max-width: 100%;
-    overflow: hidden;
   }
 
   .body {
@@ -17,7 +16,11 @@
 
 /* MAIN */
 
-
+.logo {
+  width: 15rem;
+  height: 1rem;
+  margin-top: -2rem;
+}
 
 /*FOOTER*/
 
