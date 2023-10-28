@@ -9,7 +9,6 @@
   }
 
   .body {
-    background-color: rgb(242, 242, 242);
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
   }
@@ -17,9 +16,9 @@
 /* MAIN */
 
 .logo {
-  width: 15rem;
+  width: 10rem;
   height: 1rem;
-  margin-top: -2rem;
+  margin-top: 1rem;
 }
 
 /*FOOTER*/
@@ -40,4 +39,24 @@
     width: 4rem;
     height: 4rem;
     padding: 0.6rem;
+  }
+
+  .image-svg {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+  }
+
+  .lista {
+    width: 10vh;
+    height: auto;
+  }
+
+  .tema {
+    width: 15vh;
+    padding-left: 10px;
+  }
+
+  .svg-nav {
+    fill: rgb(105, 105, 105);
   }
