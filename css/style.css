@@ -62,3 +62,165 @@
   .svg-nav {
     fill: rgb(105, 105, 105);
   }
+
+
+  /* BUTTON */
+
+  .contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .contenedor-botones {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: rgb(105, 105, 105);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .boton span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+  }
+
+    /* BOTON CERO */
+
+    .boton.cero {
+      background:  #FFFF00;
+      color: #000000;
+    }
+
+    .boton.cero span {
+      transition: .4s ease-in-out all;
+      position: absolute;
+      left: 40%;
+    }
+    
+    .boton.cero .icono {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      z-index: 2;
+      left: -40px;
+      transition: .3s ease-in-out all;
+      opacity: 0;
+    }
+    
+    .boton.cero svg {
+      color: #000000;
+      width: 35px;
+      height: 35px;
+    }
+    
+    .boton.cero:hover {
+      background:  #FFFF00;
+    }
+      
+    .boton.cero:hover .icono {
+      left: calc(100% - 50px);
+      opacity: 1;
+    }
+    
+    .boton.cero:hover span {
+      left: 20px;
+    }
+
+
+
+  /* BOTON UNO*/
+
+  .boton.uno {
+    background: #FFFF00;
+    color: #000000;
+  }
+
+  .boton.uno::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #FFFF00;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+    background-image: url('../img/house.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+  
+  .boton.uno:hover::after {
+    top: 0;
+  }
+
+  /* BOTON DOS*/
+
+  .boton.dos span {
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 40%;
+  }
+  
+  .boton.dos .icono {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: -40px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+  }
+  
+  .boton.dos svg {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .boton.dos:hover {
+    background: #0D6EFD
+  }
+  
+  .boton.dos:hover .icono {
+    left: calc(100% - 50px);
+    opacity: 1;
+  }
+  
+  .boton.dos:hover span {
+    left: 20px;
+  }
+
+
+/* MODAL FLOTANTE */
+
+.flotante {
+  width: 50px;
+  height: 50px;
+  background: #FFFF00;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
