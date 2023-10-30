@@ -97,7 +97,7 @@
 
     /* BOTON CERO */
 
-    .boton-cero {
+    .boton.cero {
       display: inline-flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -118,13 +118,13 @@
 
     }
 
-    .boton-cero span {
+    .boton.cero span {
       transition: .4s ease-in-out all;
       position: absolute;
       left: 40%;
     }
     
-    .boton-cero .icono {
+    .boton.cero .icono {
       display: flex;
       align-items: center;
       position: absolute;
@@ -134,22 +134,22 @@
       opacity: 0;
     }
     
-    .boton-cero svg {
+    .boton.cero svg {
       color: #000000;
       width: 35px;
       height: 35px;
     }
     
-    .boton-cero:hover {
+    .boton.cero:hover {
       background:  #FFFF00;
     }
       
-    .boton-cero:hover .icono {
+    .boton.cero:hover .icono {
       left: calc(100% - 50px);
       opacity: 1;
     }
     
-    .boton-cero:hover span {
+    .boton.cero:hover span {
       left: 20px;
     }
 
