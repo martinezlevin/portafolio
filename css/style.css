@@ -15,11 +15,11 @@
 
 /* MAIN */
 
-.logo {
-  width: 10rem;
-  height: 1rem;
-  margin-top: 1rem;
-}
+  .logo {
+    width: 10rem;
+    height: 1rem;
+    margin-top: 1rem;
+  }
 
 
 /* FOOTER */
@@ -44,24 +44,21 @@
 
 /* THEME */
 
+
   .image-svg {
     width: 100px;
-    height: 100px;
+    height: 40px;
     margin-right: auto;
-  }
-
-  .lista {
-    width: 10vh;
-    height: auto;
   }
 
   .tema {
     width: 15vh;
     padding-left: 10px;
+    margin-top: -2rem;
   }
 
   .svg-nav {
-    fill: rgb(105, 105, 105);
+    fill: rgb(90, 90, 90);
   }
 
 
@@ -69,15 +66,7 @@
 
   .contenedor {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 1rem;
-  }
-  
-  .contenedor-botones {
-    width: 100%;
-    justify-content: center;
   }
   
   .boton {
@@ -108,18 +97,34 @@
 
     /* BOTON CERO */
 
-    .boton.cero {
-      background:  #FFFF00;
+    .boton-cero {
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      width: 100%;
+      height: 80px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      border: none;
+      position: relative;
+      
+      box-shadow: 5px 5px 15px 1px #00000085;
       color: #000000;
+      background:  #FFFF00;
+
     }
 
-    .boton.cero span {
+    .boton-cero span {
       transition: .4s ease-in-out all;
       position: absolute;
       left: 40%;
     }
     
-    .boton.cero .icono {
+    .boton-cero .icono {
       display: flex;
       align-items: center;
       position: absolute;
@@ -129,22 +134,22 @@
       opacity: 0;
     }
     
-    .boton.cero svg {
+    .boton-cero svg {
       color: #000000;
       width: 35px;
       height: 35px;
     }
     
-    .boton.cero:hover {
+    .boton-cero:hover {
       background:  #FFFF00;
     }
       
-    .boton.cero:hover .icono {
+    .boton-cero:hover .icono {
       left: calc(100% - 50px);
       opacity: 1;
     }
     
-    .boton.cero:hover span {
+    .boton-cero:hover span {
       left: 20px;
     }
 
@@ -183,7 +188,7 @@
   .boton.dos span {
     transition: .4s ease-in-out all;
     position: absolute;
-    left: 40%;
+    left: 43%;
   }
   
   .boton.dos .icono {
