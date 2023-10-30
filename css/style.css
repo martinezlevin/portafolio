@@ -97,6 +97,7 @@
     transition: .3s ease all;
     position: relative;
     overflow: hidden;
+    box-shadow: 5px 5px 15px 1px #00000085;
   }
   
   .boton span {
@@ -221,9 +222,6 @@
   width: 50px;
   height: 50px;
   background: #FFFF00;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  box-shadow: 5px 5px 15px 1px #00000085;
 }
 
