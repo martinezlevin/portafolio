@@ -21,6 +21,7 @@
   margin-top: 1rem;
 }
 
+
 /* FOOTER */
 
   .logolinkedin {
@@ -153,6 +154,7 @@
   .boton.uno {
     background: #FFFF00;
     color: #000000;
+    border-radius: 5rem;
   }
 
   .boton.uno::after {
@@ -224,3 +226,4 @@
   background-size: contain;
   background-position: center center;
 }
+
