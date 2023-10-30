@@ -175,8 +175,8 @@
     transition: .3s ease-in-out all;
     background-image: url('../img/house.svg');
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center center;
+    background-size: 60px;
   }
   
   .boton.uno:hover::after {
