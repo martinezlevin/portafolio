@@ -21,6 +21,10 @@
     margin-top: 1rem;
   }
 
+  hr {
+    height: 1px;
+    background-color: black;
+  }
 
 /* FOOTER */
 
