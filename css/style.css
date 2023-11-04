@@ -415,7 +415,7 @@ html {
 
 @keyframes draw {
   to {
-      stroke-dashoffset: 1; /* Modificar este valor, cuanto menor sea, más rápido será el trazo */
+      stroke-dashoffset: 0; /* Modificar este valor, cuanto menor sea, más rápido será el trazo */
   }
 }
 
