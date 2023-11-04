@@ -375,3 +375,47 @@ html {
 .copyright {
   text-decoration: none;
 }
+
+
+
+/* LOADER */
+
+.loader {
+  backdrop-filter: blur(100px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  clip-path: circle(150% at 100% 0);
+  transition: clip-path 3s ease-in-out;
+}
+
+.loader2 {
+  clip-path: circle(0% at 100% 100%);
+}
+
+
+.logo1 path {
+  fill: none;
+  /*stroke: #c2ffff;
+  filter: drop-shadow(0 0 50px #71ffff) drop-shadow(0 0 100px #00ffff) drop-shadow(0 0 150px #00e5e5);*//* variable de color 2 */
+  stroke: #FFFF00;
+  filter: drop-shadow(0 0 150px #cd1cea) drop-shadow(0 0 300px #6115ab) drop-shadow(0 0 450px #270a63); /* variable de color 1 */
+  stroke-width: 150; /* Ajusta este número para cambiar el grosor del trazo */
+  stroke-dasharray: 48000; /* Longitud del trazo, ajusta según la longitud de la ruta en tu SVG */
+  stroke-dashoffset: 50000; /* Al principio, el trazo está completamente oculto */
+  animation: draw 3s infinite linear; /* Animación de 10 segundos, infinita y lineal */
+}
+
+
+@keyframes draw {
+  to {
+      stroke-dashoffset: 1; /* Modificar este valor, cuanto menor sea, más rápido será el trazo */
+  }
+}
+
