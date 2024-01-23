@@ -72,3 +72,40 @@
         })
     })
   })()
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    let checkbox = document.querySelector(".checkbox");
+    checkbox.addEventListener('change', cambiarIdioma);
+  
+    // Verificar idioma al cargar la página
+    verificarIdioma();
+  
+    function cambiarIdioma() {
+      let id = checkbox.checked;
+      redirigirPagina(id);
+    }
+  
+    function redirigirPagina(esIdiomaIngles) {
+      let rutaActual = window.location.pathname;
+  
+      // Verificar si la ruta actual ya está en el idioma deseado
+      let esEnIngles = rutaActual.startsWith('/en/');
+  
+      // Construir la nueva ruta
+      let nuevaRuta = esIdiomaIngles ? "/en/index.html" : "/index.html";
+  
+      // Redirigir solo si la ruta actual no coincide con la nueva ruta
+      if (rutaActual !== nuevaRuta) {
+        window.location.href = nuevaRuta;
+      }
+    }
+  
+    function verificarIdioma() {
+      let idiomaActual = window.location.pathname.split('/')[1];
+      if (idiomaActual === 'en') {
+        checkbox.checked = true;
+      }
+    }
+  });
+  
